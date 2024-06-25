@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Reservation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Hotel Reservation</h1>
+  <form id="reservationForm">
+    <label for="arrivalDate">Arrival Date:</label>
+    <input type="date" id="arrivalDate" name="arrivalDate" required style="padding:15px 5px ;"><br>
+    <label for="numberOfDays">Number of Days:</label>
+    <input type="number" id="numberOfDays" name="numberOfDays" min="1" required style="padding:15px 5px ;"><br>
+    <label for="roomType">Room Type:</label>
+    <select id="roomType" name="roomType" required style="padding:15px">
+      <option value="single">Single</option>
+      <option value="double">Double</option>
+      <option value="suite">Suite</option>
+    </select><br>
+    <label for="numberOfPersons">Number of Persons:</label>
+    <input type="number" id="numberOfPersons" name="numberOfPersons" min="1" required style="padding:15px 5px ;"><br>
+    <button type="submit" style="padding:15px 0 ;">Confirm Booking</button>
+  </form>
+  <div>
+    <p id="confirom"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
